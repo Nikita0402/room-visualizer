@@ -1,7 +1,7 @@
 "use client";
 
 import { useRoomImageContext } from "./RoomImageContext";
-import { motion, AnimatePresence } from "framer-motion"; // Import motion and AnimatePresence from Framer Motion
+import { motion, AnimatePresence } from "framer-motion"; 
 
 export default function HomePage() {
   const { lastIndexSelected, setLastIndexSelected } = useRoomImageContext();
@@ -14,14 +14,14 @@ export default function HomePage() {
   return (
     <AnimatePresence>
       {" "}
-      {/* No exitBeforeEnter prop needed */}
+      
       <motion.div
-        key="home" // Use key to uniquely identify the component for transitions
-        initial={{ opacity: 0 }} // Start with opacity 0 (invisible)
-        animate={{ opacity: 1 }} // Fade to full opacity (visible)
-        exit={{ opacity: 0 }} // Fade out when navigating away
-        transition={{ duration: 0.5 }} // Set transition duration for fade
-        style={{ width: "100%", height: "100%" }} // Ensure full size
+        key="home" 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        exit={{ opacity: 0 }} 
+        transition={{ duration: 0.5 }} 
+        style={{ width: "100%", height: "100%" }} 
       >
         <div
           style={{

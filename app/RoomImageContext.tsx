@@ -1,14 +1,14 @@
 "use client";
 import { createContext, useContext, useState } from "react";
 
-// Define the structure for each room
+
 export type RoomData = {
   img: string;
   name: string;
   meta?: string;
 };
 
-// Define the context type
+
 type RoomImageContextType = {
   rooms: RoomData[];
   setRooms: React.Dispatch<React.SetStateAction<RoomData[]>>;
@@ -16,10 +16,10 @@ type RoomImageContextType = {
   setLastIndexSelected: React.Dispatch<React.SetStateAction<number>>;
 };
 
-// Create the context
+
 const RoomImageContext = createContext<RoomImageContextType | undefined>(undefined);
 
-// Provider component
+
 export const RoomImageProvider = ({
   children,
 }: {
@@ -35,7 +35,7 @@ export const RoomImageProvider = ({
   );
 };
 
-// Hook to use the context
+
 export const useRoomImageContext = () => {
   const context = useContext(RoomImageContext);
   if (!context) {
