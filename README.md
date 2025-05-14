@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## About
+This project is for my own hand at Next.js. I tried implementing a room visualizer with modern web designs to articulate a website that has Room mode functional that allows the user to choose the room and add room and duplicate it. It uses functionalities like drag images, animations and adding image as functionalities. 
+
 ## Getting Started
 
 First, run the development server:
